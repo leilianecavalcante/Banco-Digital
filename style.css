@@ -1,0 +1,147 @@
+/* DIVISÃO VERTICAL DA TELA */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    width: 40%;
+    background-color: #394508;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* PARTE DIREITA BRANCA */
+.right-panel {
+    width: 50%;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* SEU CSS ORIGINAL (COM PEQUENOS AJUSTES) */
+.header-container {
+    padding: 0 20px;
+    /* todas as laterais têm 20px */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 74px;
+    height: 17px;
+}
+
+.abrirconta {
+    background-color: #D2FD9C;
+    color: black;
+    height: 33px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mensagemh1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+.p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #CBCBCB;
+    margin-top: 0;
+    margin: 20px;
+}
+
+.p2 {
+    color: #D2FD9C;
+    width: 355px;
+    height: 14px;
+}
+
+.destaque {
+    color: #D2FD9C;
+    font-style: italic;
+}
+
+.Nossasofertas {
+    margin: 20px;
+}
+
+.Nossasofertas h3 {
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.modules-container {
+    display: flex;
+    gap: 14px;
+}
+
+.module {
+    width: 112px;
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #619111;
+    border: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1px;
+}
+
+.module p {
+    color: #000000;
+}
+
+.module:hover {
+    transform: translate(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: #D2FD9C;
+}
+
+.contatos {
+    text-align: center;
+    margin: 20px 0 0;
+    width: 100%;
+    height: 14px;
+    text-align: left;
+}
+
+.contatos a {
+    color: #D2FD9C;
+    text-decoration: none;
+}
+
+.contatosul {
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 13px;
+}
