@@ -284,3 +284,113 @@ h2 {
     align-items: center;
     gap: 20px;
 }
+
+.app-container {
+    margin-top: 100px;
+}
+
+.app-h2 {
+    color: #394508;
+    margin-top: 29px;
+    font-size: 42px;
+}
+
+.img-beneficios {
+    width: 100%;
+    /* faz a imagem ocupar toda a largura do container */
+    height: auto;
+    /* mantém a proporção da imagem */
+    object-fit: cover;
+    /* garante que a imagem se ajuste sem distorcer */
+    border-radius: 8px;
+    /* opcional, combina com o card */
+}
+
+.p1-beneficios-desc {
+    color: #394508;
+}
+
+.p2-beneficios-desc {
+    color: #5D5D5D;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards-cartão {
+    width: 330px;
+    /* largura de cada card */
+    padding: 15px;
+    border: 1px solid #619111;
+    /* só para visualizar o card */
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.beneficios-container {
+    width: 100%;
+    /* ocupa toda a largura do card */
+    display: flex;
+    justify-content: center;
+    /* centraliza a imagem horizontalmente */
+    overflow: hidden;
+    /* evita que a imagem ultrapasse o container */
+}
+
+.img-use-o-app {
+    margin-top: 200px;
+}
+
+.headline {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.h2-1-software {
+    color: #394508;
+    margin-top: 100px;
+    margin-bottom: 1px;
+    font-size: 42px;
+}
+
+.h2-2-software {
+    color: #5D5D5D;
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.icon-informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza tudo */
+    gap: 10px;
+    /* espaço entre o card e o texto */
+}
+
+.cards-app {
+    height: 140px;
+    width: 150px;
+    padding: 21px;
+    border-radius: 10px;
+    background-color: #394508;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-info {
+    margin: 0;
+    text-align: center;
+    color: #394508;
+    font-weight: 600;
+}
