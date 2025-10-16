@@ -1,59 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Manrope", sans-serif;
-    /* destaque leve */
     font-weight: 400;
 }
 
-/* === DIVISÃO VERTICAL === */
+/* === BODY E HTML === */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     min-height: 100vh;
-    font-family: "Manrope", sans-serif;
 }
 
-/* PARTE ESQUERDA */
+/* === PARTE ESQUERDA (VERDE) === */
 header {
     width: 40%;
     background-color: #394508;
-    overflow-y: auto;
     height: 100vh;
+    /* cobre toda a altura da tela */
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* PARTE DIREITA */
+/* === PARTE DIREITA (BRANCA) === */
 .right-panel {
     width: 60%;
     display: flex;
     flex-direction: column;
-    /* imagem em cima, h2 embaixo */
     justify-content: flex-start;
     align-items: center;
     padding: 50px;
+    overflow-y: auto;
+    /* permite scroll se necessário */
+    max-height: 100vh;
+    /* não ultrapassa altura da tela */
 }
 
-/* Imagem */
+/* === IMAGEM === */
 .imgrigth-panel {
     max-width: 100%;
-    /* ajusta ao tamanho da tela */
     height: auto;
     object-fit: cover;
     border-radius: 8px;
     transform: scale(1.10);
-    /* opcional */
 }
 
-/* Título abaixo da imagem */
+/* === TÍTULO ABAIXO DA IMAGEM === */
 .title-below {
     text-align: center;
     margin-top: 100px;
-    /* aumenta esse valor para descer mais */
 }
 
 .title-below h2 {
@@ -82,7 +88,6 @@ nav {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: sans-serif;
     font-weight: 600;
 }
 
@@ -95,7 +100,6 @@ nav {
     font-size: 42px;
     line-height: 40px;
     font-weight: 400;
-    /* use 700, que está importado */
     color: white;
     margin-bottom: 30px;
 }
@@ -181,17 +185,50 @@ h2 {
     text-decoration: underline;
 }
 
+/* === LOGOS DE EMPRESAS === */
+.img-logoempresas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === FRASES PRINCIPAIS === */
+.frasesmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.geth2main {
+    color: #394508;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.maxh2main {
+    color: #5D5D5D;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
 /* === RESPONSIVO === */
 @media (max-width: 900px) {
     body {
         flex-direction: column;
-        /* empilha as seções */
+        /* empilha verde e branco */
     }
 
     header,
     .right-panel {
         width: 100%;
         height: auto;
+        /* ajusta altura ao conteúdo */
+        max-height: none;
+        padding: 20px;
+        overflow: visible;
+        /* remove scroll interno */
     }
 
     .modules-container {
@@ -199,18 +236,19 @@ h2 {
     }
 
     .contatosul {
-        justify-content: flex-start;
         flex-wrap: wrap;
     }
 }
 
 @media (max-width: 500px) {
     .mensagemh1 {
-        font-size: 42px;
+        font-size: 32px;
+        /* reduz título para mobile */
     }
 
     h2 {
         font-size: 14px;
+        /* reduz subtítulo */
     }
 
     .module {
@@ -224,8 +262,25 @@ h2 {
     }
 }
 
-.img-logoempresas {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite quebrar linha */
+    gap: 20px;
+    /* espaço entre os cards */
+    justify-content: center;
+    /* centraliza a linha de cards */
+}
+
+.cards-info {
+    height: 200px;
+    width: 310px;
+    padding: 21px;
+    border-radius: 11px;
+    background-color: #D2FD9C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
