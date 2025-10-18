@@ -385,18 +385,35 @@ h2 {
 
 .abrirconta2 {
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    /* Centraliza verticalmente */
+    left: 30%;
+    /* Centraliza horizontalmente */
+    transform: translate(-90%, -50%);
+    /* Ajusta a posição exata */
     color: white;
+    /* Cor do texto */
     font-size: 24px;
+    /* Ajuste o tamanho conforme desejar */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    /* Deixa o texto legível sobre a imagem */
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(207, 202, 202, 0.7);
-    max-width: 80%;
-    line-height: 1.5em;
-    padding: 10px;
-    border-radius: 8px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    font-size: 15px;
+    border: none;
+    padding: 1px 40px;
+    border-radius: 20px;
     cursor: pointer;
+    font-weight: 600px;
+    white-space: nowrap;
+    margin-bottom: 0px;
+}
+
+.abrirconta2:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 
