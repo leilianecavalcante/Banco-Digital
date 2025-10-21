@@ -73,8 +73,8 @@ nav {
 }
 
 .logo {
-    width: 100px;
-    height: 20px;
+    width: 110px;
+    height: 25px;
 }
 
 .abrirconta {
@@ -101,7 +101,14 @@ nav {
     line-height: 40px;
     font-weight: 400;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.mensagemh2 {
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 400;
+    color: white;
 }
 
 h2 {
@@ -155,7 +162,7 @@ h2 {
 
 .module p {
     color: #000000;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .module:hover {
@@ -341,6 +348,7 @@ h2 {
     margin-bottom: 200px;
 }
 
+
 .icon-informacao {
     display: flex;
     flex-direction: column;
@@ -489,8 +497,8 @@ h2 {
 }
 
 .redes-footer img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s;
 }
 
